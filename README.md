@@ -1,0 +1,5 @@
+这是一个基于Transformer的英文翻译中文的模型，由于我的电脑显卡算力不足，我的模型参数设置的比较低
+model.py中是transfomer的实现过程，每一步基本都要我的注释来解释
+dataset.py是对cmn.txt的数据集进行分割，该数据集不是很严谨，所以训练出来的效果其实不太好
+train.py是训练代码，inference.py可以是推理代码，UI.py是以pyqt5编写的一个界面
+训练只实现了英文翻译为中文
