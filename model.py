@@ -1,14 +1,14 @@
 from torch import nn
 import torch
 import matplotlib.pyplot as plt
-
+#
 #inpinp shape：[batch,seq_len,d_model]
 class PositionEncoding(nn.Module):
     def __init__(self,d_model,max_seq_len=512):
         super().__init__()
         #shape:[max_sql_len,1]
         position=torch.arange(0,max_seq_len).unsqueeze(1)
-        
+    
         item=1/10000**(torch.arange(0,d_model,2)/d_model)
 
         tmp_pos=position*item

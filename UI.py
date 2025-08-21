@@ -8,7 +8,7 @@ import torch
 from transformers import AutoTokenizer
 from model import Transformer
 
-
+#
 class TranslationApp(QMainWindow):
     def __init__(self, model_path="./model.pt", tokenizer_path="./tokenizer"):
         super().__init__()

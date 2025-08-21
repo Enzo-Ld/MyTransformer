@@ -10,7 +10,7 @@ def split_data(data_path):
     test_data=datas[int(len(datas)*0.9):]
     open("./data/train.txt","w",encoding="utf-8").writelines(train_data)
     open("./data/test.txt","w",encoding="utf-8").writelines(test_data)
-
+#
 def count_max_seq_len(data_path):
     datas=open(data_path,'r',encoding='utf-8').readlines()
     max_len=0

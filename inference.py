@@ -22,7 +22,7 @@ if __name__=="__main__":
     max_seq_len=512
     batch_size=1
     epoches=50
-
+#
 
 
     model=Transformer(src_vocab_size,dst_vocab_size,pad_idx,n_layers,heads,d_model,d_ff,dropout,max_seq_len).to(device)

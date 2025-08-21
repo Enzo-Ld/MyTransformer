@@ -8,7 +8,7 @@
 #     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 #     tokenizer = AutoTokenizer.from_pretrained("./tokenizer")
 #     tokenizer.add_special_tokens({"bos_token": "<s>"})
-
+#
 #     # 模型超参数
 #     src_vocab_size = tokenizer.vocab_size + len(tokenizer.special_tokens_map)
 #     dst_vocab_size = tokenizer.vocab_size + len(tokenizer.special_tokens_map)
